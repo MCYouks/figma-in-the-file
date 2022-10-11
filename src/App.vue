@@ -11,6 +11,10 @@
     <div class="wrapper">
       <HelloWorld />
 
+      <button @click="toggleDark()">
+        Toggle {{ isDark ? "Light" : "Dark" }}
+      </button>
+
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
@@ -22,8 +26,12 @@
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
+import { useDark, useToggle } from "@vueuse/core";
 import HelloWorld from "./components/HelloWorld.vue";
+
+// Vue Use - Dark API
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
 </script>
 
 <style scoped>
