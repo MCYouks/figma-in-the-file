@@ -1,31 +1,49 @@
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="@/assets/images/figma.svg"
-      width="125"
-      height="125"
-    />
+  <div class="main">
+    <div class="main__item">
+      <img
+        alt="Vue logo"
+        class="logo"
+        src="@/assets/images/figma.svg"
+        width="125"
+        height="125"
+      />
 
-    <div class="wrapper">
-      <HelloWorld />
+      <div class="wrapper">
+        <HelloWorld />
 
-      <!-- Toggle Light/Dark Mode -->
-      <ToggleModeButton />
+        <!-- Toggle Light/Dark Mode -->
+        <ToggleModeButton />
+      </div>
     </div>
-  </header>
-
-  <RouterView />
+    <div class="main__item">
+      <DemoCard />
+    </div>
+  </div>
 </template>
 
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import ToggleModeButton from "./components/ToggleModeButton.vue";
+import HelloWorld from "@/components/HelloWorld.vue";
+import ToggleModeButton from "@/components/ToggleModeButton.vue";
+import DemoCard from "@/components/DemoCard.vue";
 </script>
 
-<style scoped>
-header {
+<style lang="scss" scoped>
+.main {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 48px;
+  height: 100vh;
+  width: 100vw;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 0 48px;
+  }
+}
+/* header {
   line-height: 1.5;
   max-height: 100vh;
 }
@@ -85,5 +103,5 @@ nav a:first-of-type {
     padding: 1rem 0;
     margin-top: 1rem;
   }
-}
+} */
 </style>

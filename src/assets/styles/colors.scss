@@ -1,0 +1,48 @@
+// Light theme
+:root {
+  // Gray
+  --gray-0: #222222;
+  --gray-1: #333333;
+  --gray-2: #4f4f4f;
+  --gray-3: #828282;
+  --gray-4: #bdbdbd;
+  --gray-5: #e0e0e0;
+  --gray-6: #f2f2f2;
+  --gray-7: #f7f7f7;
+  --gray-8: #fafafa;
+
+  // Background
+  --background: #fdfbfa;
+
+  // White
+  --white: #ffffff;
+  --white-text: #ffffff;
+
+  // Primary
+  --primary: #3f81f1;
+  --primary-dark: #2269e2;
+}
+
+// Dark Theme
+.dark {
+  // Gray
+  --gray-1: #f6f6f6;
+  --gray-2: #d3d3d3;
+  --gray-3: #b6b6b6;
+  --gray-4: #878787;
+  --gray-5: #525252 ;
+  --gray-6: #3b3b3b ;
+  --gray-7: #2f2f2f ;
+  --gray-8: #1e1e1e;
+
+  // Background
+  --background: #101010;
+
+  // White
+  --white: #222424;
+  --white-text: #ffffff;
+
+  // Blue
+  --primary: #5790F3;
+  --primary-dark: #3978E5;
+}
