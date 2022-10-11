@@ -1,8 +1,10 @@
 <template>
-  <div class="demo">Bonjour</div>
+  <DemoCard />
 </template>
 
-<script setup></script>
+<script setup>
+import DemoCard from "@/components/DemoCard.vue";
+</script>
 
 <style lang="scss" scoped>
 .demo {
