@@ -1,6 +1,6 @@
 <template>
   <button class="button" @click="toggleDark()">
-    Toggle {{ isDark ? "Light" : "Dark" }}
+    Switch to {{ isDark ? "Light" : "Dark" }}
   </button>
 </template>
 
