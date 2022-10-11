@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-    <div class="main__item">
+    <div class="main__column">
       <HelloFigma />
     </div>
-    <div class="main__item">
+    <div class="main__column">
       <DemoCard />
     </div>
   </div>
@@ -23,9 +23,8 @@ import DemoCard from "@/components/DemoCard.vue";
   height: 100vh;
   width: 100vw;
 
-  &__item {
+  &__column {
     display: flex;
-    // flex-direction: column;
     align-items: center;
     padding: 0 48px;
   }
