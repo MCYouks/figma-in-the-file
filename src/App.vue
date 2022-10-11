@@ -14,11 +14,6 @@
       <button @click="toggleDark()">
         Toggle {{ isDark ? "Light" : "Dark" }}
       </button>
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
     </div>
   </header>
 
