@@ -11,9 +11,8 @@
     <div class="wrapper">
       <HelloWorld />
 
-      <button @click="toggleDark()">
-        Toggle {{ isDark ? "Light" : "Dark" }}
-      </button>
+      <!-- Toggle Light/Dark Mode -->
+      <ToggleModeButton />
     </div>
   </header>
 
@@ -21,12 +20,8 @@
 </template>
 
 <script setup>
-import { useDark, useToggle } from "@vueuse/core";
 import HelloWorld from "./components/HelloWorld.vue";
-
-// Vue Use - Dark API
-const isDark = useDark();
-const toggleDark = useToggle(isDark);
+import ToggleModeButton from "./components/ToggleModeButton.vue";
 </script>
 
 <style scoped>
@@ -78,7 +73,7 @@ nav a:first-of-type {
 
   header .wrapper {
     display: flex;
-    place-items: flex-start;
+    align-items: flex-start;
     flex-wrap: wrap;
   }
 
