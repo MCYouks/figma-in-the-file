@@ -27,7 +27,7 @@ import ToggleModeButton from "@/components/ToggleModeButton.vue";
 <style lang="scss" scoped>
 .hello {
   display: flex;
-  gap: 24px;
+  gap: 32px;
   margin-top: 48px;
 
   &__logo {

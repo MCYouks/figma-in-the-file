@@ -19,7 +19,7 @@
   align-items: center;
   padding: 0 12px;
   height: 40px;
-  gap: 16px;
+  gap: 12px;
   border-radius: 5px;
   background: var(--gray-7);
   transition: var(--transition-1);
