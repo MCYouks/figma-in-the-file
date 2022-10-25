@@ -4,7 +4,7 @@
     <h1 class="main__title">Darkmode magic for Figma</h1>
 
     <!-- Toggle -->
-    <ToggleButton :active="isDark" @click="toggleDark()" class="main__toggle" />
+    <ToggleButton :active="isDark" class="main__toggle" @click="toggleDark()" />
 
     <!-- Mooon -->
     <Moon :is-dark="isDark" />
