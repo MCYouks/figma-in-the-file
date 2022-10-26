@@ -42,7 +42,7 @@ defineProps({
     transition: var(--transition-3);
 
     &:not(.active) {
-      transform: translateX(42px);
+      transform: translateX(32px);
     }
   }
 }
