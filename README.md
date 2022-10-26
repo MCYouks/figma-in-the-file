@@ -1,4 +1,4 @@
-# figma-in-the-file
+# Luego x Figma in the file
 
 This template should help get you started developing a darkmode with Vue 3.
 
