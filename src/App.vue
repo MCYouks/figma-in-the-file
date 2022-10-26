@@ -3,6 +3,14 @@
     <!-- Title -->
     <h1 class="main__title">Darkmode magic for Figma</h1>
 
+    <a
+      href="https://github.com/MCYouks/figma-in-the-file"
+      target="_blank"
+      class="main__github"
+    >
+      <font-awesome-icon icon="fab fa-github" />
+    </a>
+
     <!-- Toggle -->
     <ToggleButton :active="isDark" class="main__toggle" @click="toggleDark()" />
 
@@ -42,6 +50,20 @@ const toggleDark = useToggle(isDark);
     margin-top: 128px;
     text-align: center;
     color: var(--gray-2);
+  }
+
+  &__github {
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    font-size: 24px;
+    color: var(--gray-2);
+    transition: var(--transition-3);
+    cursor: pointer;
+
+    &:hover {
+      color: var(--gray-1);
+    }
   }
 
   &__toggle {
