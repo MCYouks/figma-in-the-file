@@ -1,9 +1,9 @@
 <template>
   <!-- Toggle -->
-  <div class="toggle">
+  <button class="toggle">
     <!-- Indicator -->
     <div class="toggle__indicator" :class="{ active }" />
-  </div>
+  </button>
 </template>
 
 <script setup>
