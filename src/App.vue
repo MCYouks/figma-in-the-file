@@ -39,7 +39,7 @@ const toggleDark = useToggle(isDark);
   &__title {
     font-size: 40px;
     font-weight: 600;
-    margin-top: 96px;
+    margin-top: 128px;
     text-align: center;
     color: var(--gray-2);
   }

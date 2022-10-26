@@ -1,11 +1,20 @@
 <template>
-  <a class="tag" href="https://twitter.com/andreasblondeau" target="_blank">
+  <div class="tag">
+    <!-- Text -->
+    <div class="tag__text">💛 from</div>
+
     <!-- Avatar -->
     <img class="tag__avatar" src="@/assets/images/andreas.png" />
 
     <!-- Text -->
-    <div class="tag__text">@andreasblondeau</div>
-  </a>
+    <a
+      class="tag__text"
+      href="https://twitter.com/andreasblondeau"
+      target="_blank"
+    >
+      @andreasblondeau
+    </a>
+  </div>
 </template>
 
 <script setup></script>
@@ -14,7 +23,6 @@
 .tag {
   position: absolute;
   bottom: 48px;
-  left: 64px;
   display: flex;
   align-items: center;
   padding: 0 12px;
@@ -23,6 +31,10 @@
   border-radius: 5px;
   background: var(--gray-7);
   transition: var(--transition-1);
+
+  @media screen and (min-width: 640px) {
+    left: 64px;
+  }
 
   &:hover {
     background: var(--gray-6);
